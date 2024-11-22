@@ -4,6 +4,7 @@ export default defineConfig({
   title: "人狼wiki",
   description: "人狼onlineについて個人的に思ったことを書き残したもの",
   lastUpdated: true,
+  ignoreDeadLinks: true,
   themeConfig: {
     outline: false,
     darkModeSwitchLabel: "テーマ",
