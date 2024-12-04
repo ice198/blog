@@ -1,13 +1,19 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "人狼wiki",
-  description: "人狼onlineについて個人的に思ったことを書き残したもの",
-  lastUpdated: true,
+  title: "vemiのブログ",
+  description: "今までにやってきたことの備忘録です。",
+  appearance: {
+    //デフォルトでライトテーマにする
+    initialValue: "light",
+  },
+  head: [["link", { rel: "icon", href: "/icon.svg" }]],
   ignoreDeadLinks: true,
   themeConfig: {
-    outline: false,
     darkModeSwitchLabel: "テーマ",
+    outlineTitle: "目次",
+    sidebarMenuLabel: "目次",
+    returnToTopLabel: "ページのトップへ",
     search: {
       provider: "local",
       options: {
