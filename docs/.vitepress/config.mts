@@ -1,13 +1,22 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "vemiのブログ",
+  title: "氷のブログ",
   description: "今までにやってきたことの備忘録です。",
   appearance: {
     //デフォルトでライトテーマにする
     initialValue: "light",
   },
-  head: [["link", { rel: "icon", href: "/icon.svg" }]],
+  head: [
+    ["link", { rel: "icon", href: "/icon.ico" }],
+    [
+      "link",
+      {
+        rel: "apple-touch-icon",
+        href: "/apple-touch-icon.png",
+      },
+    ],
+  ],
   ignoreDeadLinks: true,
   themeConfig: {
     darkModeSwitchLabel: "テーマ",

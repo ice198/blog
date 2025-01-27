@@ -1,7 +1,7 @@
 <template>
     <div class="app">
         <div class="text-horizontal-center">
-            <h1>12桁トリップ作成ツール</h1>
+            <h1>12桁トリップメーカー</h1>
         </div>
         <div id="status">{{ status }}</div>
         <div class="input-container">
@@ -150,8 +150,6 @@ body {
 #results {
     flex: 1;
     overflow-y: auto;
-    padding: 10px;
-    background-color: #fff;
 }
 .result-item {
     display: flex;
@@ -161,40 +159,41 @@ body {
     border-radius: 0px;
     white-space: pre;
     position: relative;
-    color: #333; /* 文字色 */
+    color: #3c3c43; /* 文字色 */
     font-size: 0.9em;
-    font-family: "Fira Code", monospace;
+    font-family: monospace;
+    border: 1px solid #e3e3e4; /* 枠線を追加 */
+    margin-bottom: -1px; /* 枠線が重なって太くなるのを防止 */
 }
 .result-item:nth-child(odd) {
-    background-color: #f7f7f7;
+    background-color: #ffffff;
 }
 .result-item:nth-child(even) {
-    background-color: #e0e0e0;
+    background-color: #f6f6f7;
 }
 .text-horizontal-center {
     text-align: center;
 }
 h1 {
-    font-family: "Noto Sans", sans-serif;
     font-size: 1.5em;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
 }
 .input-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 10px;
-    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .textbox {
     color: #333;
-    width: 60%;
-    padding: 8px 10px;
-    border: 1px solid #000;
-    border-radius: 25px;
-    background: #fff;
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #e2e2e3;
+    border-radius: 20px;
+    background: #f6f6f7;
     font-size: 1em;
     line-height: 1.5;
     padding-left: 20px;
@@ -215,7 +214,7 @@ h1 {
     padding: 0.7em 1.5em;
     border: 1px solid transparent;
     border-radius: 25px;
-    background-color: #2589d0;
+    background-color: #3e5cff;
     color: #fff;
     font-size: 0.95em;
     font-weight: bold;
@@ -225,7 +224,7 @@ h1 {
         color 0.3s;
 }
 .button:hover {
-    background-color: #1a6db3;
+    background-color: #304adb;
     color: #fff;
 }
 .button.stop {
@@ -240,11 +239,9 @@ h1 {
 #status {
     text-align: center;
     padding: 10px;
-    background-color: #fff;
-    border-bottom: 1px solid #d2d2d2;
-    font-family: "Noto Sans", sans-serif;
+    border-bottom: 1px solid #e3e3e4;
+    font-family: monospace;
     font-size: 1em;
-    color: #333;
 }
 .copy-text {
     cursor: pointer;
@@ -255,8 +252,52 @@ h1 {
 }
 .copy-text.ok {
     color: #888;
+    font-family: "Noto Sans", sans-serif;
 }
 .copy-text:hover {
     text-decoration: underline;
+}
+
+/* ダークモード対応のスタイル */
+.dark {
+    .result-item {
+        border: 1px solid #29292d; /* 枠線を追加 */
+    }
+    .result-item:nth-child(odd) {
+        background-color: #1b1b1f;
+        color: #deded6;
+    }
+    .result-item:nth-child(even) {
+        background-color: #202127;
+        color: #deded6;
+    }
+    .textbox {
+        background: #161618;
+        border: 1px solid #29292d;
+        color: #deded6;
+    }
+    .textbox::placeholder {
+        color: #95959c;
+    }
+    .button {
+        background-color: #0064ff;
+        color: #fff;
+    }
+    .button:hover {
+        background-color: #024cbf;
+    }
+    .button.stop {
+        background-color: #f00;
+        color: #fff;
+    }
+    .copy-text {
+        color: #95959c;
+    }
+    .copy-text.ok {
+        color: #95959c;
+    }
+    #status {
+        border-bottom: 1px solid #29292d;
+    }
 }
 </style>

@@ -35,6 +35,22 @@ Wikioediaによると
 
 つまり、**トリップキーは本人しか知らないため、トリップがその人は本人であるという証明になります。**
 
+## なぜ固定トリップをつけるのか
+ここまでの説明を読んで、
+
+「別にトリップを固定せずとも素トリップで判別すれば良いのでは？」
+
+と思った方もいると思います。
+
+固定トリップには、端末を変えても同じトリップを使うことができるという利点の他に、信頼性が高いという利点があります。
+
+素トリップは信頼性が低いの？と問われると、残念ながら低いです。なぜなら素トリップは改竄することができるからです。
+
+<img src="/images/image14.png" width="600" style="display: block; margin: auto;">
+<img src="/images/image15.png" width="600" style="display: block; margin: auto;">
+
+このように、実は自由に設定できます。トラブルの原因になるのであまり広まっていませんが、要するに**素トリップは安全ではない**ということです。
+
 ## 10桁トリップと12桁トリップ
 
 トリップキーをつけるのに半角英数字10文字を入力すると述べましたが、それに加えて .（ピリオド）と /（スラッシュ）も使えます。
@@ -65,7 +81,7 @@ Wikioediaによると
 
 最初の1桁や2桁はそれでできるかもしれませんが、あまり現実的ではないので実際にはプログラムにやらせます。
 
-ブラウザでトリップを検索するには[トリップ検索サイト](https://olivier-zinro.fc2.net/blog-category-21.html)や[UTF](https://milkybot.wiki.fc2.com/wiki/UncoTripFinder)、[12桁トリップ作成ツール](/12trip/)などのサイトがあります。
+ブラウザでトリップを検索するには[トリップ検索サイト](https://olivier-zinro.fc2.net/blog-category-21.html)や[UTF](https://milkybot.wiki.fc2.com/wiki/UncoTripFinder)、[12桁トリップメーカー](/12trip/)などのサイトがあります。
 
 また、PC向けに[Meriken's Tripcode Engine](https://github.com/meriken/merikens-tripcode-engine-v3)という高速なトリップ検索ソフトがあります。パソコンを持っている人はこちらを使うのがいいかと思います。
 
