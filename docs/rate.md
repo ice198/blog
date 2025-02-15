@@ -71,3 +71,22 @@ AさんとBさんの勝った時に上昇するレートの数値に差がある
 …かもしれない。
 
 今回の方法で算出したレートがどれぐらい正確に実力を反映しているかは未知数です。
+
+<style scoped>
+/* コンポーネント内でフォントを設定 */
+@font-face {
+    font-family: "GenJyuuGothicL";
+    src: url("/GenJyuuGothicL-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "GenJyuuGothicL";
+    src: url("/GenJyuuGothicL-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+* {
+    font-family: "GenJyuuGothicL";
+}
+</style>

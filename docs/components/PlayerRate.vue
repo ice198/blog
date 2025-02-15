@@ -49,7 +49,7 @@ export default {
         async loadRates() {
             try {
                 const response = await fetch(
-                    "https://raw.githubusercontent.com/ice198/Brella/refs/heads/main/data/rate.txt",
+                    "https://raw.githubusercontent.com/ice198/blog-rate/refs/heads/main/rate.txt",
                 );
                 const text = await response.text();
                 text.split("\n").forEach((line) => {

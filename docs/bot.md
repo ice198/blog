@@ -33,3 +33,22 @@ Botと称しているが実際は操作の自動化といった方が良いか�
 1週間ほど稼働させたのち、停止。
 
 一部をプレイヤーレート計測botに流用した。
+
+<style scoped>
+/* コンポーネント内でフォントを設定 */
+@font-face {
+    font-family: "GenJyuuGothicL";
+    src: url("/GenJyuuGothicL-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "GenJyuuGothicL";
+    src: url("/GenJyuuGothicL-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+* {
+    font-family: "GenJyuuGothicL";
+}
+</style>

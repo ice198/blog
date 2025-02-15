@@ -42,5 +42,46 @@ https://zinro.net/m/player.php?addCpu=1
 
 案山子（かかし）としてCPUを追加することができます。
 
----
 他にもいくつかありますが、あまり役に立たないため省きます。
+
+---
+
+<style scoped>
+/* コンポーネント内でフォントを設定 */
+@font-face {
+    font-family: "GenJyuuGothicL";
+    src: url("/GenJyuuGothicL-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "GenJyuuGothicL";
+    src: url("/GenJyuuGothicL-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+* {
+    font-family: "GenJyuuGothicL";
+}
+</style>
+
+<style scoped>
+.rounded-box {
+  width: 170px;
+  height: 170px;
+  background-color: white;
+  border-radius: 10px; /* 角を丸くする */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+</style>
+
+広告
+<div class="rounded-box">
+    <a href="//af.moshimo.com/af/c/click?a_id=4883524&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F4902505256349%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbiccamera%2Fi%2F11151716%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/biccamera/cabinet/product/1971/00000003287594_a01.jpg?_ex=128x128" alt="" style="border: medium;" /></a><img src="//i.moshimo.com/af/i/impression?a_id=4883524&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" style="border: 0px;" loading="lazy" width="1" height="1">
+</div>
+<br>
+<small>↑　一番使ったシャーペン。高いシャーペンは金属でできてたりして重くなりがちだが、これはプラスチックなので軽い。価格は低いのになぜか耐久性が高い。3年使ってもまだ壊れてない。というか高いシャーペンほど壊れやすい気がするのは私だけだろうか…？</small>
